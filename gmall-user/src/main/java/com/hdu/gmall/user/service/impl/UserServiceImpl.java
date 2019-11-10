@@ -1,10 +1,11 @@
 package com.hdu.gmall.user.service.impl;
 
-import com.hdu.gmall.user.bean.UmsMember;
-import com.hdu.gmall.user.bean.UmsMemberReceiveAddress;
+
+import com.hdu.gmall.bean.UmsMember;
+import com.hdu.gmall.bean.UmsMemberReceiveAddress;
+import com.hdu.gmall.service.UserService;
 import com.hdu.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.hdu.gmall.user.mapper.UserMapper;
-import com.hdu.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;

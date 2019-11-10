@@ -1,7 +1,7 @@
-package com.hdu.gmall.user.service;
+package com.hdu.gmall.service;
 
-import com.hdu.gmall.user.bean.UmsMember;
-import com.hdu.gmall.user.bean.UmsMemberReceiveAddress;
+import com.hdu.gmall.bean.UmsMember;
+import com.hdu.gmall.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 

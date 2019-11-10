@@ -1,68 +1,45 @@
-package com.hdu.gmall.user.bean;
+package com.hdu.gmall.bean;
 
-
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-public class UmsMember {
-//    声明主键
+public class UmsMember implements Serializable {
+
     @Id
-//    主键返回策略
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private Long memberLevelId;
-
+    private String id;
+    private String         memberLevelId;
     private String username;
-
-    private String password;
-
+    private String         password;
     private String nickname;
-
-    private String phone;
-
-    private Integer status;
-
+    private String         phone;
+    private int status;
     private Date createTime;
-
     private String icon;
-
-    private Integer gender;
-
+    private int         gender;
     private Date birthday;
-
-    private String city;
-
+    private String        city;
     private String job;
+    private String         personalizedSignature;
+    private int sourceType;
+    private int         integration;
+    private int growth;
+    private int         luckeyCount;
+    private int historyIntegration;
 
-    private String personalizedSignature;
-
-    private Integer sourceType;
-
-    private Integer integration;
-
-    private Integer growth;
-
-    private Integer luckeyCount;
-
-    private Integer historyIntegration;
-
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Long getMemberLevelId() {
+    public String getMemberLevelId() {
         return memberLevelId;
     }
 
-    public void setMemberLevelId(Long memberLevelId) {
+    public void setMemberLevelId(String memberLevelId) {
         this.memberLevelId = memberLevelId;
     }
 
@@ -71,7 +48,7 @@ public class UmsMember {
     }
 
     public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+        this.username = username;
     }
 
     public String getPassword() {
@@ -79,7 +56,7 @@ public class UmsMember {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+        this.password = password;
     }
 
     public String getNickname() {
@@ -87,7 +64,7 @@ public class UmsMember {
     }
 
     public void setNickname(String nickname) {
-        this.nickname = nickname == null ? null : nickname.trim();
+        this.nickname = nickname;
     }
 
     public String getPhone() {
@@ -95,14 +72,14 @@ public class UmsMember {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
+        this.phone = phone;
     }
 
-    public Integer getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
@@ -119,14 +96,14 @@ public class UmsMember {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon == null ? null : icon.trim();
+        this.icon = icon;
     }
 
-    public Integer getGender() {
+    public int getGender() {
         return gender;
     }
 
-    public void setGender(Integer gender) {
+    public void setGender(int gender) {
         this.gender = gender;
     }
 
@@ -143,7 +120,7 @@ public class UmsMember {
     }
 
     public void setCity(String city) {
-        this.city = city == null ? null : city.trim();
+        this.city = city;
     }
 
     public String getJob() {
@@ -151,7 +128,7 @@ public class UmsMember {
     }
 
     public void setJob(String job) {
-        this.job = job == null ? null : job.trim();
+        this.job = job;
     }
 
     public String getPersonalizedSignature() {
@@ -159,46 +136,46 @@ public class UmsMember {
     }
 
     public void setPersonalizedSignature(String personalizedSignature) {
-        this.personalizedSignature = personalizedSignature == null ? null : personalizedSignature.trim();
+        this.personalizedSignature = personalizedSignature;
     }
 
-    public Integer getSourceType() {
+    public int getSourceType() {
         return sourceType;
     }
 
-    public void setSourceType(Integer sourceType) {
+    public void setSourceType(int sourceType) {
         this.sourceType = sourceType;
     }
 
-    public Integer getIntegration() {
+    public int getIntegration() {
         return integration;
     }
 
-    public void setIntegration(Integer integration) {
+    public void setIntegration(int integration) {
         this.integration = integration;
     }
 
-    public Integer getGrowth() {
+    public int getGrowth() {
         return growth;
     }
 
-    public void setGrowth(Integer growth) {
+    public void setGrowth(int growth) {
         this.growth = growth;
     }
 
-    public Integer getLuckeyCount() {
+    public int getLuckeyCount() {
         return luckeyCount;
     }
 
-    public void setLuckeyCount(Integer luckeyCount) {
+    public void setLuckeyCount(int luckeyCount) {
         this.luckeyCount = luckeyCount;
     }
 
-    public Integer getHistoryIntegration() {
+    public int getHistoryIntegration() {
         return historyIntegration;
     }
 
-    public void setHistoryIntegration(Integer historyIntegration) {
+    public void setHistoryIntegration(int historyIntegration) {
         this.historyIntegration = historyIntegration;
     }
 }
