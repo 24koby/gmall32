@@ -37,6 +37,12 @@
         <jest.version>5.3.3</jest.version>
         <jna.version>4.5.1</jna.version>
         <beanUtils.version>1.9.3</beanUtils.version>
+        <curator-framework.version>4.0.1</curator-framework.version>
+        <zookeeper.version>3.4.13</zookeeper.version>
+        <spring-context-support.version>1.0.2</spring-context-support.version>
+        <netty.version>4.1.32.Final</netty.version>
+        <dubbostart.version>0.2.0</dubbostart.version>
+        <dubboto.version>2.0.0</dubboto.version>
     </properties>
 
     <dependencyManagement>
@@ -47,11 +53,11 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.alibaba</groupId>-->
+                <!--<artifactId>dubbo</artifactId>-->
+                <!--<version>${dubbo.version}</version>-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>com.101tec</groupId>
@@ -59,11 +65,11 @@
                 <version>${zkclient.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.gitee.reger</groupId>
-                <artifactId>spring-boot-starter-dubbo</artifactId>
-                <version>${dubbo-starter.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.gitee.reger</groupId>-->
+                <!--<artifactId>spring-boot-starter-dubbo</artifactId>-->
+                <!--<version>${dubbo-starter.version}</version>-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
@@ -143,6 +149,39 @@
                 <version>${beanUtils.version}</version>
             </dependency>
 
+
+
+
+
+            <dependency>
+                <groupId>com.alibaba.spring.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubboto.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba.boot/dubbo-spring-boot-starter &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>com.alibaba.boot</groupId>-->
+                <!--<artifactId>dubbo-spring-boot-starter</artifactId>-->
+                <!--<version>${dubbostart.version}</version>-->
+            <!--</dependency>-->
+
+            <!--<dependency>-->
+                <!--<groupId>com.alibaba.spring</groupId>-->
+                <!--<artifactId>spring-context-support</artifactId>-->
+                <!--<version>${spring-context-support.version}</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>io.netty</groupId>-->
+                <!--<artifactId>netty-all</artifactId>-->
+                <!--<version>${netty.version}</version>-->
+            <!--</dependency>-->
 
         </dependencies>
     </dependencyManagement>
