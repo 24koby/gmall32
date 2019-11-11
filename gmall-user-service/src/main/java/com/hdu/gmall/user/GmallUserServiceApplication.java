@@ -7,7 +7,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan("com.hdu.gmall.user.mapper")
-@EnableDubbo
+@EnableDubbo(scanBasePackages = "com.hdu.gmall")
 public class GmallUserServiceApplication {
 
     public static void main(String[] args) {
